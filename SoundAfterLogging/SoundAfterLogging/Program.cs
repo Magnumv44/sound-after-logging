@@ -13,6 +13,7 @@ namespace SoundAfterLogging
             SoundPlayer sndPlayer = new SoundPlayer();
             sndPlayer.Stream = File.OpenRead(Path.Combine(sMediaPath, "Alarm01.wav"));
             sndPlayer.PlaySync();
+            sndPlayer.Dispose();
         }
     }
 }
